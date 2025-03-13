@@ -10,6 +10,7 @@ node_modules
 
 # IDEs and editors
 /.idea
+elastic-atm-az4-bug.iml
 .project
 .classpath
 .c9/
