@@ -1,6 +1,8 @@
+import "elastic-apm-node/start";
+
 import {app} from '@azure/functions';
 
-import "./cron-functions/console-cron-function";
+import "./service-bus-functions/service-bus-function";
 
 app.hook.appStart(async () => {
   console.log('App started');
