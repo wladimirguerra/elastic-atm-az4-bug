@@ -1,5 +1,5 @@
 {
-  "name": "@elastic-atm-az4-bug/source",
+  "name": "@wladimirguerra/elastic-apm-az4-bug",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
