@@ -13,15 +13,14 @@
         "defaultConfiguration": "production",
         "options": {
           "platform": "node",
-          "outputPath": "apps/functions/dist",
+          "outputPath": "dist/",
           "format": [
             "cjs"
           ],
           "bundle": false,
-          "main": "apps/functions/src/main.ts",
+          "main": "apps/functions/src/index.ts",
           "tsConfig": "apps/functions/tsconfig.app.json",
           "assets": [
-            "apps/functions/src/assets"
           ],
           "esbuildOptions": {
             "sourcemap": true,
@@ -42,22 +41,21 @@
           }
         }
       },
-      "serve": {
-        "executor": "@nx/js:node",
+      "run": {
+        "executor": "nx:run-commands",
         "defaultConfiguration": "development",
         "dependsOn": [
           "build"
         ],
         "options": {
           "buildTarget": "az4-functions:build",
-          "runBuildTargetDependencies": false
+          "runBuildTargetDependencies": false,
+          "commands": ["func start"]
         },
         "configurations": {
           "development": {
-            "buildTarget": "az4-functions:build:development"
           },
           "production": {
-            "buildTarget": "az4-functions:build:production"
           }
         }
       },

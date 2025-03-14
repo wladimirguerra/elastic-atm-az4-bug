@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {},
+  "main": "dist/index.js",
   "private": true,
   "devDependencies": {
     "@nx/esbuild": "20.5.0",
