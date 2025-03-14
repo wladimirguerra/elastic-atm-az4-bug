@@ -2,7 +2,9 @@
   "name": "@elastic-atm-az4-bug/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "functions": "nx run az4-functions:run:development"
+  },
   "main": "dist/index.js",
   "private": true,
   "devDependencies": {
